@@ -21,6 +21,8 @@ app.get("/",(req, res) => {
     res.json( { message: "welcome to contact book application"});
 });
 
+setupContactRoutes(app);
+
 //set port, listen for requests
 const PORT = config.app.port;
 app.listen(PORT, () => {
